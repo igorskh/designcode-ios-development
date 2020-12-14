@@ -6,15 +6,19 @@
 //
 
 import SwiftUI
+import Introspect
 
 struct CourseList: View {
     @State var courses = courseData
     @State var active = false
     @State var activeIndex = -1
     
+    @State var activeView = CGSize.zero
+    
     var body: some View {
         ZStack {
-            Color.black.opacity(active ? 0.5 : 0)
+            Color.black
+                .opacity(Double(activeView.height/500))
                 .animation(.linear)
                 .edgesIgnoringSafeArea(.all)
             
@@ -34,6 +38,7 @@ struct CourseList: View {
                                 active: $active,
                                 index: index,
                                 activeIndex: $activeIndex,
+                                activeView: $activeView,
                                 course: courses[index]
                             )
                             .offset(y: courses[index].show ? -geometry.frame(in: .global).minY : 0)
@@ -49,8 +54,10 @@ struct CourseList: View {
                 .frame(width: screen.width)
                 .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
             }
+            .introspectScrollView { scrollView in
+                scrollView.isScrollEnabled = !active
+            }
             .statusBar(hidden: false)
-//            .statusBar(hidden: active ? true : false)
             .animation(.linear)
         }
     }

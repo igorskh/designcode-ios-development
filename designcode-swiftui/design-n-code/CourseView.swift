@@ -13,6 +13,7 @@ struct CourseView: View {
     
     var index: Int
     @Binding var activeIndex: Int
+    @Binding var activeView: CGSize
     
     var course: Course
     
@@ -20,9 +21,17 @@ struct CourseView: View {
         ZStack(alignment: .top) {
             CourseTextView(show: show)
             
-            CourseCardView(show: $show, active: $active, course: course, index: index, activeIndex: $activeIndex)
+            CourseCardView(show: $show,
+                           active: $active,
+                           course: course,
+                           index: index,
+                           activeIndex: $activeIndex,
+                           activeView: $activeView)
         }
         .frame(height: show ? screen.height : 280)
+        .scaleEffect(1 - activeView.height / 1000)
+        .hueRotation(Angle(degrees: Double(activeView.height)))
+        .rotation3DEffect(Angle(degrees: Double(activeView.height / 10)), axis: (x: 0, y: 10, z: 0))
         .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
         .edgesIgnoringSafeArea(.all)
     }
@@ -33,6 +42,7 @@ struct CourseView_Previews: PreviewProvider {
         CourseView(
             show: .constant(false), active: .constant(false),
             index: 0, activeIndex: .constant(0),
+            activeView: .constant(CGSize.zero),
             course: courseData[0]
         )
     }
@@ -70,6 +80,7 @@ struct CourseCardView: View {
     
     var index : Int
     @Binding var activeIndex: Int
+    @Binding var activeView: CGSize
     
     var body: some View {
         VStack {
@@ -110,6 +121,22 @@ struct CourseCardView: View {
         .background(Color(course.color))
         .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
         .shadow(color: Color(course.color).opacity(0.3), radius: 20, x: 0, y: 20)
+        .gesture(
+            DragGesture(minimumDistance: 60)
+                .onChanged { value in
+                    guard value.translation.height > 0 else { return }
+                    guard value.translation.height < 300 else { return }
+                    activeView = value.translation
+                }
+                .onEnded { value in
+                    if activeView.height > 50 {
+                        show = false
+                        active = false
+                        activeIndex = -1
+                    }
+                    activeView = .zero
+                }
+        )
         .onTapGesture {
             show.toggle()
             active.toggle()
