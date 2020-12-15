@@ -32,6 +32,7 @@
 		CB183AEE254ED79A000AA29E /* WorkSans-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB183AD8254ED79A000AA29E /* WorkSans-Italic-VariableFont_wght.ttf */; };
 		CB183AEF254ED79A000AA29E /* WorkSans-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB183AD9254ED79A000AA29E /* WorkSans-VariableFont_wght.ttf */; };
 		CB1C8716254CCAE100163068 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1C8715254CCAE100163068 /* TabBar.swift */; };
+		CB3A61572589218400F769DA /* ScrollViewWithOffsetKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A61562589218400F769DA /* ScrollViewWithOffsetKey.swift */; };
 		CB856457258638CB00AE929D /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB856456258638CB00AE929D /* CourseList.swift */; };
 		CB85645A25863DC400AE929D /* CourseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB85645925863DC400AE929D /* CourseDetail.swift */; };
 		CB9E02C0254B4E1100701FA3 /* design_n_codeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9E02BF254B4E1100701FA3 /* design_n_codeApp.swift */; };
@@ -73,6 +74,7 @@
 		CB183AD8254ED79A000AA29E /* WorkSans-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		CB183AD9254ED79A000AA29E /* WorkSans-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		CB1C8715254CCAE100163068 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		CB3A61562589218400F769DA /* ScrollViewWithOffsetKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewWithOffsetKey.swift; sourceTree = "<group>"; };
 		CB856456258638CB00AE929D /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
 		CB85645925863DC400AE929D /* CourseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetail.swift; sourceTree = "<group>"; };
 		CB9E02BC254B4E1100701FA3 /* design-n-code.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "design-n-code.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +176,7 @@
 				CB9E02C3254B4E1200701FA3 /* Assets.xcassets */,
 				CB9E02C8254B4E1200701FA3 /* Info.plist */,
 				CB9E02C5254B4E1200701FA3 /* Preview Content */,
+				CB3A61562589218400F769DA /* ScrollViewWithOffsetKey.swift */,
 			);
 			path = "design-n-code";
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				CBB7A7B7254CBD7000E149A3 /* UpdateDetail.swift in Sources */,
 				CB856457258638CB00AE929D /* CourseList.swift in Sources */,
 				CB9E02C2254B4E1100701FA3 /* ContentView.swift in Sources */,
+				CB3A61572589218400F769DA /* ScrollViewWithOffsetKey.swift in Sources */,
 				CBEB0BDE254B640200B67729 /* MenuView.swift in Sources */,
 				CBE5F01F254CB3CC007485B2 /* UpdateList.swift in Sources */,
 				CB9FB1DD254CC16300E95A93 /* UpdateStore.swift in Sources */,

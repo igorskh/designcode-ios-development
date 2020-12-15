@@ -15,11 +15,13 @@ struct CourseDetail: View {
     @Binding var activeIndex: Int
     @Binding var activeView: CGSize
     
+    @State var textScrollOffset: (x: CGFloat, y: CGFloat) = (x: 0, y: 0)
+    
     var course: Course
     
     var body: some View {
         ZStack(alignment: .top) {
-            CourseTextView(show: show)
+            CourseTextView(show: show, textScrollOffset: $textScrollOffset)
             
             CourseCardView(show: $show,
                            active: $active,
@@ -27,6 +29,7 @@ struct CourseDetail: View {
                            index: index,
                            activeIndex: $activeIndex,
                            activeView: $activeView)
+                .frame(height: textScrollOffset.y < 0 ? 460 + textScrollOffset.y*2 : 460)
         }
         .frame(height: show ? screen.height : 280)
         .scaleEffect(1 - activeView.height / 1000)
@@ -50,9 +53,13 @@ struct CourseDetail_Previews: PreviewProvider {
 
 struct CourseTextView: View {
     var show: Bool
+    @Binding var textScrollOffset: (x: CGFloat, y: CGFloat)
     
     var body: some View {
-        ScrollView {
+        ScrollView(offsetChanged: {
+            textScrollOffset.x = $0.x
+            textScrollOffset.y = $0.y
+        }) {
             VStack(alignment: .leading, spacing: 30.0) {
                 Text("Take your SwiftUI app to the App Store with advanced techniques like API data, packages and CMS.")
                 
@@ -66,8 +73,8 @@ struct CourseTextView: View {
             .padding(30)
         }
         .frame(maxWidth: show ? .infinity : screen.width - 60, maxHeight: show ? .infinity : 280, alignment: .top)
-        .offset(y: show ? 460 : 0)
-        .padding(.bottom, show ? 460 : 0)
+        .offset(y: show ? 460 + textScrollOffset.y*1.5 : 0)
+        .padding(.bottom, show ? 460 + textScrollOffset.y*1.5 : 0)
         .background(Color.white)
         .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
         .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 20)
