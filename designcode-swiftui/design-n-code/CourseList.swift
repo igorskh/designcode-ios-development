@@ -44,7 +44,7 @@ struct CourseList: View {
                             .offset(y: courses[index].show ? -geometry.frame(in: .global).minY : 0)
                             .opacity(activeIndex != index && active ? 0 : 1)
                             .scaleEffect(activeIndex != index && active ? 0.5 : 1)
-                            .offset(x: activeIndex != index && active ? -screen.width : 1)
+                            .offset(x: activeIndex != index && active ? -screen.width : 0)
                         }
                         .frame(height: 280)
                         .frame(maxWidth: courses[index].show ? .infinity : screen.width - 60)
