@@ -57,7 +57,7 @@ struct CourseList: View {
             .introspectScrollView { scrollView in
                 scrollView.isScrollEnabled = !active
             }
-            .statusBar(hidden: false)
+            .statusBar(hidden: active)
             .animation(.linear)
         }
     }
