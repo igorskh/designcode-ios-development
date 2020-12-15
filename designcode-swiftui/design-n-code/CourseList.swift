@@ -33,7 +33,7 @@ struct CourseList: View {
                     
                     ForEach(courses.indices, id: \.self) { index in
                         GeometryReader { geometry in
-                            CourseView(
+                            CourseDetail(
                                 show: $courses[index].show,
                                 active: $active,
                                 index: index,

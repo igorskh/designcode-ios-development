@@ -1,5 +1,5 @@
 //
-//  CourseView.swift
+//  CourseDetail.swift
 //  design-n-code
 //
 //  Created by Igor Kim on 13.12.20.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CourseView: View {
+struct CourseDetail: View {
     @Binding var show: Bool
     @Binding var active: Bool
     
@@ -37,10 +37,10 @@ struct CourseView: View {
     }
 }
 
-struct CourseView_Previews: PreviewProvider {
+struct CourseDetail_Previews: PreviewProvider {
     static var previews: some View {
-        CourseView(
-            show: .constant(false), active: .constant(false),
+        CourseDetail(
+            show: .constant(true), active: .constant(true),
             index: 0, activeIndex: .constant(0),
             activeView: .constant(CGSize.zero),
             course: courseData[0]
@@ -52,19 +52,22 @@ struct CourseTextView: View {
     var show: Bool
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 30.0) {
-            Text("Take your SwiftUI app to the App Store with advanced techniques like API data, packages and CMS.")
-            
-            Text("About this course")
-                .font(.title).bold()
-            
-            Text("This course is unlike any other. We care about design and want to make sure that you get better at it in the process. It was written for designers and developers who are passionate about collaborating and building real apps for iOS and macOS.")
-            
-            Text("While it's not one codebase for all apps, you learn once and can apply the techniques and controls to all platforms with incredible quality, consistency and performance. It's beginner-friendly, but it's also packed with design tricks and efficient workflows for building great user interfaces and interactions.")
+        ScrollView {
+            VStack(alignment: .leading, spacing: 30.0) {
+                Text("Take your SwiftUI app to the App Store with advanced techniques like API data, packages and CMS.")
+                
+                Text("About this course")
+                    .font(.title).bold()
+                
+                Text("This course is unlike any other. We care about design and want to make sure that you get better at it in the process. It was written for designers and developers who are passionate about collaborating and building real apps for iOS and macOS.")
+                
+                Text("While it's not one codebase for all apps, you learn once and can apply the techniques and controls to all platforms with incredible quality, consistency and performance. It's beginner-friendly, but it's also packed with design tricks and efficient workflows for building great user interfaces and interactions.")
+            }
+            .padding(30)
         }
-        .padding(30)
         .frame(maxWidth: show ? .infinity : screen.width - 60, maxHeight: show ? .infinity : 280, alignment: .top)
         .offset(y: show ? 460 : 0)
+        .padding(.bottom, show ? 460 : 0)
         .background(Color.white)
         .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
         .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 20)
