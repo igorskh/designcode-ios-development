@@ -33,6 +33,11 @@
 		CB183AEF254ED79A000AA29E /* WorkSans-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB183AD9254ED79A000AA29E /* WorkSans-VariableFont_wght.ttf */; };
 		CB1C8716254CCAE100163068 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1C8715254CCAE100163068 /* TabBar.swift */; };
 		CB3A61572589218400F769DA /* ScrollViewWithOffsetKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A61562589218400F769DA /* ScrollViewWithOffsetKey.swift */; };
+		CB3A615A2589226200F769DA /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A61592589226200F769DA /* Data.swift */; };
+		CB3A615D2589228800F769DA /* PostList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A615C2589228800F769DA /* PostList.swift */; };
+		CB3A61602589238200F769DA /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A615F2589238200F769DA /* DataStore.swift */; };
+		CB3A61642589269B00F769DA /* Contentful in Frameworks */ = {isa = PBXBuildFile; productRef = CB3A61632589269B00F769DA /* Contentful */; };
+		CB3A6167258926B800F769DA /* CourseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A6166258926B800F769DA /* CourseStore.swift */; };
 		CB856457258638CB00AE929D /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB856456258638CB00AE929D /* CourseList.swift */; };
 		CB85645A25863DC400AE929D /* CourseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB85645925863DC400AE929D /* CourseDetail.swift */; };
 		CB9E02C0254B4E1100701FA3 /* design_n_codeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9E02BF254B4E1100701FA3 /* design_n_codeApp.swift */; };
@@ -75,6 +80,10 @@
 		CB183AD9254ED79A000AA29E /* WorkSans-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		CB1C8715254CCAE100163068 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		CB3A61562589218400F769DA /* ScrollViewWithOffsetKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewWithOffsetKey.swift; sourceTree = "<group>"; };
+		CB3A61592589226200F769DA /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		CB3A615C2589228800F769DA /* PostList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostList.swift; sourceTree = "<group>"; };
+		CB3A615F2589238200F769DA /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		CB3A6166258926B800F769DA /* CourseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseStore.swift; sourceTree = "<group>"; };
 		CB856456258638CB00AE929D /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
 		CB85645925863DC400AE929D /* CourseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetail.swift; sourceTree = "<group>"; };
 		CB9E02BC254B4E1100701FA3 /* design-n-code.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "design-n-code.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB3A61642589269B00F769DA /* Contentful in Frameworks */,
 				CBE1A9B02587E2FF00D84223 /* Introspect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,10 +176,14 @@
 				CB183ABF254ED615000AA29E /* Modifiers.swift */,
 				CBEB0BDD254B640200B67729 /* MenuView.swift */,
 				CB85645925863DC400AE929D /* CourseDetail.swift */,
+				CB3A615F2589238200F769DA /* DataStore.swift */,
 				CBEB0BE0254B6D8A00B67729 /* Home.swift */,
+				CB3A61592589226200F769DA /* Data.swift */,
 				CBE5F01E254CB3CC007485B2 /* UpdateList.swift */,
 				CB9FB1DC254CC16300E95A93 /* UpdateStore.swift */,
+				CB3A6166258926B800F769DA /* CourseStore.swift */,
 				CBB7A7B6254CBD7000E149A3 /* UpdateDetail.swift */,
+				CB3A615C2589228800F769DA /* PostList.swift */,
 				CBEB0BE3254B72BC00B67729 /* HomeView.swift */,
 				CB1C8715254CCAE100163068 /* TabBar.swift */,
 				CB183AC2254ED79A000AA29E /* Work_Sans */,
@@ -207,6 +221,7 @@
 			name = "design-n-code";
 			packageProductDependencies = (
 				CBE1A9AF2587E2FF00D84223 /* Introspect */,
+				CB3A61632589269B00F769DA /* Contentful */,
 			);
 			productName = "design-n-code";
 			productReference = CB9E02BC254B4E1100701FA3 /* design-n-code.app */;
@@ -237,6 +252,7 @@
 			mainGroup = CB9E02B3254B4E1100701FA3;
 			packageReferences = (
 				CBE1A9AE2587E2FF00D84223 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+				CB3A61622589269B00F769DA /* XCRemoteSwiftPackageReference "contentful.swift" */,
 			);
 			productRefGroup = CB9E02BD254B4E1100701FA3 /* Products */;
 			projectDirPath = "";
@@ -286,7 +302,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB3A6167258926B800F769DA /* CourseStore.swift in Sources */,
 				CB183ABD254ECF18000AA29E /* RingView.swift in Sources */,
+				CB3A615A2589226200F769DA /* Data.swift in Sources */,
+				CB3A61602589238200F769DA /* DataStore.swift in Sources */,
 				CB183AC0254ED615000AA29E /* Modifiers.swift in Sources */,
 				CB1C8716254CCAE100163068 /* TabBar.swift in Sources */,
 				CBB7A7B7254CBD7000E149A3 /* UpdateDetail.swift in Sources */,
@@ -296,6 +315,7 @@
 				CBEB0BDE254B640200B67729 /* MenuView.swift in Sources */,
 				CBE5F01F254CB3CC007485B2 /* UpdateList.swift in Sources */,
 				CB9FB1DD254CC16300E95A93 /* UpdateStore.swift in Sources */,
+				CB3A615D2589228800F769DA /* PostList.swift in Sources */,
 				CB85645A25863DC400AE929D /* CourseDetail.swift in Sources */,
 				CBEB0BE1254B6D8A00B67729 /* Home.swift in Sources */,
 				CBEB0BE4254B72BC00B67729 /* HomeView.swift in Sources */,
@@ -490,6 +510,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CB3A61622589269B00F769DA /* XCRemoteSwiftPackageReference "contentful.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/contentful/contentful.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
 		CBE1A9AE2587E2FF00D84223 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
@@ -501,6 +529,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CB3A61632589269B00F769DA /* Contentful */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB3A61622589269B00F769DA /* XCRemoteSwiftPackageReference "contentful.swift" */;
+			productName = Contentful;
+		};
 		CBE1A9AF2587E2FF00D84223 /* Introspect */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CBE1A9AE2587E2FF00D84223 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
