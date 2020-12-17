@@ -21,11 +21,11 @@ struct Home: View {
                 .padding(.top, 44)
                 .background(
                     VStack {
-                        LinearGradient(gradient: Gradient(colors: [Color("background2"), Color.white]), startPoint: .top, endPoint: .bottom)
+                        LinearGradient(gradient: Gradient(colors: [Color("background2"), Color("background1")]), startPoint: .top, endPoint: .bottom)
                             .frame(height: 200)
                         Spacer()
                     }
-                    .background(Color.white)
+                    .background(Color("background1"))
                 )
                 .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
                 .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 20)
@@ -36,8 +36,12 @@ struct Home: View {
                 .edgesIgnoringSafeArea(.all)
             
             
+            
             MenuView()
-                .background(Color.black.opacity(0.001))
+                .background(
+                    BlurView(style: .systemMaterial)
+                        .edgesIgnoringSafeArea(.all)
+                )
                 .offset(y: showProfile ? 0 : screen.height)
                 .offset(y: viewState.height)
                 .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
@@ -56,7 +60,8 @@ struct Home: View {
                 )
             
             if showContent {
-                Color.white.edgesIgnoringSafeArea(.all)
+                BlurView(style: .systemMaterial)
+                    .edgesIgnoringSafeArea(.all)
                 
                 ContentView()
                 
@@ -85,6 +90,7 @@ struct Home: View {
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
         Home()
+            .environment(\.colorScheme, .dark)
     }
 }
 
