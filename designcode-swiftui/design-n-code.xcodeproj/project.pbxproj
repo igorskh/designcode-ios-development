@@ -40,6 +40,7 @@
 		CB3A6167258926B800F769DA /* CourseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A6166258926B800F769DA /* CourseStore.swift */; };
 		CB3A616B25895A9700F769DA /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CB3A616A25895A9700F769DA /* SDWebImageSwiftUI */; };
 		CB3A616E258A319A00F769DA /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A616D258A319A00F769DA /* BlurView.swift */; };
+		CB553DDD258F68B6005C36BD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB553DDC258F68B6005C36BD /* LoginView.swift */; };
 		CB856457258638CB00AE929D /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB856456258638CB00AE929D /* CourseList.swift */; };
 		CB85645A25863DC400AE929D /* CourseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB85645925863DC400AE929D /* CourseDetail.swift */; };
 		CB9E02C0254B4E1100701FA3 /* design_n_codeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9E02BF254B4E1100701FA3 /* design_n_codeApp.swift */; };
@@ -88,6 +89,7 @@
 		CB3A615F2589238200F769DA /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		CB3A6166258926B800F769DA /* CourseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseStore.swift; sourceTree = "<group>"; };
 		CB3A616D258A319A00F769DA /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		CB553DDC258F68B6005C36BD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		CB856456258638CB00AE929D /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
 		CB85645925863DC400AE929D /* CourseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetail.swift; sourceTree = "<group>"; };
 		CB9E02BC254B4E1100701FA3 /* design-n-code.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "design-n-code.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,6 +187,7 @@
 				CB3A615F2589238200F769DA /* DataStore.swift */,
 				CBEB0BE0254B6D8A00B67729 /* Home.swift */,
 				CBD68071258BDE2D00100858 /* Buttons.swift */,
+				CB553DDC258F68B6005C36BD /* LoginView.swift */,
 				CB3A61592589226200F769DA /* Data.swift */,
 				CB3A616D258A319A00F769DA /* BlurView.swift */,
 				CBE5F01E254CB3CC007485B2 /* UpdateList.swift */,
@@ -327,6 +330,7 @@
 				CB9FB1DD254CC16300E95A93 /* UpdateStore.swift in Sources */,
 				CB3A615D2589228800F769DA /* PostList.swift in Sources */,
 				CB85645A25863DC400AE929D /* CourseDetail.swift in Sources */,
+				CB553DDD258F68B6005C36BD /* LoginView.swift in Sources */,
 				CBD68072258BDE2D00100858 /* Buttons.swift in Sources */,
 				CBEB0BE1254B6D8A00B67729 /* Home.swift in Sources */,
 				CB3A616E258A319A00F769DA /* BlurView.swift in Sources */,

@@ -11,7 +11,7 @@ import SwiftUI
 struct design_n_codeApp: App {
     var body: some Scene {
         WindowGroup {
-            TabBar()
+            LoginView()
         }
     }
 }
