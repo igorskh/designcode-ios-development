@@ -15,6 +15,7 @@ struct SuccessView: View {
             Text("Logging you...").font(.title).bold()
                 .opacity(show ? 1 : 0)
                 .animation(Animation.linear(duration: 1).delay(0.2))
+                .padding()
             
             LottieView(filename: "success")
                 .frame(width: 300, height: 200)
