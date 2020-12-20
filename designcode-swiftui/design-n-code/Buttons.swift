@@ -7,6 +7,14 @@
 
 import SwiftUI
 
+func haptic(type: UINotificationFeedbackGenerator.FeedbackType) {
+    UINotificationFeedbackGenerator().notificationOccurred(type)
+}
+
+func impact(style: UIImpactFeedbackGenerator.FeedbackStyle) {
+    UIImpactFeedbackGenerator(style: style).impactOccurred()
+}
+
 struct Buttons: View {
     var body: some View {
         VStack(spacing: 50) {
@@ -35,6 +43,7 @@ struct RectangleButton: View {
     
     var body: some View {
         Text("Button")
+            .foregroundColor(.black)
             .font(.system(size: 20, weight: .semibold, design: .rounded))
             .frame(width: 200, height: 60)
             .background(
@@ -75,11 +84,13 @@ struct RectangleButton: View {
             .gesture(
                 LongPressGesture(minimumDuration: 0.5, maximumDistance: 10).onChanged { value in
                     tap = true
+                    impact(style: .heavy)
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                         self.tap = false
                     }
                 }
                 .onEnded { value in
+                    haptic(type: .success)
                     press.toggle()
                 }
             )
@@ -101,6 +112,7 @@ struct CircleButton: View {
                 .offset(x: press ? 0 : 90, y: press ? 0 : 90)
                 .rotation3DEffect(Angle(degrees: press ? 0 : 20), axis: (x: 10, y: 10, z: 0))
         }
+        .foregroundColor(.black)
         .frame(width: 100, height: 100)
         .background(
             ZStack {
@@ -191,7 +203,7 @@ struct PlayButton: View {
                 gestureState = currentState
             }
             .onEnded { value in
-                self.press.toggle()
+                press.toggle()
             }
         )
     }
