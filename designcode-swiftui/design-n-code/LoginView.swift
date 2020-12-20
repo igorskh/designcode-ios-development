@@ -20,6 +20,8 @@ struct LoginView: View {
     @State var showAlert = false
     @State var alertMessage = "Something went wrong."
     
+    @State var isLoading = false
+    
     var body: some View {
         ZStack {
             ZStack(alignment: .top) {
@@ -96,9 +98,15 @@ struct LoginView: View {
                         Spacer()
                         
                         Button(action: {
-                            showAlert = true
                             hideKeyboard()
                             isFocused = false
+                            isLoading = true
+                            
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                                self.showAlert = true
+                                self.isLoading = false
+                                self.showAlert = true
+                            }
                         }) {
                             Text("Log in".uppercased())
                                 .foregroundColor(.black)
@@ -111,13 +119,19 @@ struct LoginView: View {
                         .alert(isPresented: $showAlert) {
                             Alert(title: Text("Error"), message:
                                     Text(alertMessage), dismissButton:
-                                    .default(Text("OK")))
+                                        .default(Text("OK")))
                         }
                     }
                     .padding()
                     .offset(y: isFocused ? 200 : 0)
                 }
                 .padding()
+            }
+            
+            VStack {
+                if isLoading {
+                    LoadingView()
+                }
             }
         }
         .offset(y: isFocused ? -200 : 0)
