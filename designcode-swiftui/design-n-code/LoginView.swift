@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 func hideKeyboard() {
     UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
@@ -21,6 +22,31 @@ struct LoginView: View {
     @State var alertMessage = "Something went wrong."
     
     @State var isLoading = false
+    
+    @State var isSuccessful = false
+    
+    func login() {
+        hideKeyboard()
+        isFocused = false
+        isLoading = true
+        
+        Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+            isLoading = false
+            
+            if error != nil {
+                alertMessage = error?.localizedDescription ?? ""
+                showAlert = true
+            } else {
+                isSuccessful = true
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2){
+                    self.isSuccessful = false
+                    self.email = ""
+                    self.password = ""
+                }
+            }
+        }
+    }
     
     var body: some View {
         ZStack {
@@ -98,15 +124,7 @@ struct LoginView: View {
                         Spacer()
                         
                         Button(action: {
-                            hideKeyboard()
-                            isFocused = false
-                            isLoading = true
-                            
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                                self.showAlert = true
-                                self.isLoading = false
-                                self.showAlert = true
-                            }
+                            login()
                         }) {
                             Text("Log in".uppercased())
                                 .foregroundColor(.black)
@@ -128,10 +146,11 @@ struct LoginView: View {
                 .padding()
             }
             
-            VStack {
-                if isLoading {
-                    LoadingView()
-                }
+            if isLoading {
+                LoadingView()
+            }
+            if isSuccessful {
+                SuccessView()
             }
         }
         .offset(y: isFocused ? -200 : 0)

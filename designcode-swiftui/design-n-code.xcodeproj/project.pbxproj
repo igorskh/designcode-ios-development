@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99247B13E65FF1B1120AEC2A /* Pods_design_n_code.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 343292415B45FE240E09E0B4 /* Pods_design_n_code.framework */; };
 		CB183ABD254ECF18000AA29E /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB183ABC254ECF18000AA29E /* RingView.swift */; };
 		CB183AC0254ED615000AA29E /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB183ABF254ED615000AA29E /* Modifiers.swift */; };
 		CB183ADA254ED79A000AA29E /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = CB183AC3254ED79A000AA29E /* OFL.txt */; };
@@ -36,16 +37,18 @@
 		CB3A615A2589226200F769DA /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A61592589226200F769DA /* Data.swift */; };
 		CB3A615D2589228800F769DA /* PostList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A615C2589228800F769DA /* PostList.swift */; };
 		CB3A61602589238200F769DA /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A615F2589238200F769DA /* DataStore.swift */; };
-		CB3A61642589269B00F769DA /* Contentful in Frameworks */ = {isa = PBXBuildFile; productRef = CB3A61632589269B00F769DA /* Contentful */; };
+		CB3A61642589269B00F769DA /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = CB3A61632589269B00F769DA /* SwiftPackageProductDependency */; };
 		CB3A6167258926B800F769DA /* CourseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A6166258926B800F769DA /* CourseStore.swift */; };
-		CB3A616B25895A9700F769DA /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CB3A616A25895A9700F769DA /* SDWebImageSwiftUI */; };
+		CB3A616B25895A9700F769DA /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = CB3A616A25895A9700F769DA /* SwiftPackageProductDependency */; };
 		CB3A616E258A319A00F769DA /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A616D258A319A00F769DA /* BlurView.swift */; };
 		CB553DDD258F68B6005C36BD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB553DDC258F68B6005C36BD /* LoginView.swift */; };
-		CB553DE1258F7291005C36BD /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = CB553DE0258F7291005C36BD /* Lottie */; };
+		CB553DE1258F7291005C36BD /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = CB553DE0258F7291005C36BD /* SwiftPackageProductDependency */; };
 		CB553DE4258F72B1005C36BD /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB553DE3258F72B1005C36BD /* LottieView.swift */; };
 		CB553DE7258F7302005C36BD /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB553DE6258F7302005C36BD /* LoadingView.swift */; };
 		CB553DEC258F73FB005C36BD /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = CB553DEA258F73FB005C36BD /* loading.json */; };
 		CB553DED258F73FB005C36BD /* success.json in Resources */ = {isa = PBXBuildFile; fileRef = CB553DEB258F73FB005C36BD /* success.json */; };
+		CB553DF0258F80D7005C36BD /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB553DEF258F80D7005C36BD /* SuccessView.swift */; };
+		CB553DF3258F832D005C36BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB553DF2258F832C005C36BD /* GoogleService-Info.plist */; };
 		CB856457258638CB00AE929D /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB856456258638CB00AE929D /* CourseList.swift */; };
 		CB85645A25863DC400AE929D /* CourseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB85645925863DC400AE929D /* CourseDetail.swift */; };
 		CB9E02C0254B4E1100701FA3 /* design_n_codeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9E02BF254B4E1100701FA3 /* design_n_codeApp.swift */; };
@@ -55,7 +58,7 @@
 		CB9FB1DD254CC16300E95A93 /* UpdateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9FB1DC254CC16300E95A93 /* UpdateStore.swift */; };
 		CBB7A7B7254CBD7000E149A3 /* UpdateDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB7A7B6254CBD7000E149A3 /* UpdateDetail.swift */; };
 		CBD68072258BDE2D00100858 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD68071258BDE2D00100858 /* Buttons.swift */; };
-		CBE1A9B02587E2FF00D84223 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = CBE1A9AF2587E2FF00D84223 /* Introspect */; };
+		CBE1A9B02587E2FF00D84223 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = CBE1A9AF2587E2FF00D84223 /* SwiftPackageProductDependency */; };
 		CBE5F01F254CB3CC007485B2 /* UpdateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE5F01E254CB3CC007485B2 /* UpdateList.swift */; };
 		CBEB0BDE254B640200B67729 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEB0BDD254B640200B67729 /* MenuView.swift */; };
 		CBEB0BE1254B6D8A00B67729 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEB0BE0254B6D8A00B67729 /* Home.swift */; };
@@ -63,6 +66,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		343292415B45FE240E09E0B4 /* Pods_design_n_code.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_design_n_code.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82FA52ECA8B20414816BB8BD /* Pods-design-n-code.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-design-n-code.release.xcconfig"; path = "Target Support Files/Pods-design-n-code/Pods-design-n-code.release.xcconfig"; sourceTree = "<group>"; };
+		BC6B4649EF0662919471C575 /* Pods-design-n-code.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-design-n-code.debug.xcconfig"; path = "Target Support Files/Pods-design-n-code/Pods-design-n-code.debug.xcconfig"; sourceTree = "<group>"; };
 		CB183ABC254ECF18000AA29E /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
 		CB183ABF254ED615000AA29E /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
 		CB183AC3254ED79A000AA29E /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
@@ -99,6 +105,8 @@
 		CB553DE6258F7302005C36BD /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		CB553DEA258F73FB005C36BD /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		CB553DEB258F73FB005C36BD /* success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success.json; sourceTree = "<group>"; };
+		CB553DEF258F80D7005C36BD /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
+		CB553DF2258F832C005C36BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CB856456258638CB00AE929D /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
 		CB85645925863DC400AE929D /* CourseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetail.swift; sourceTree = "<group>"; };
 		CB9E02BC254B4E1100701FA3 /* design-n-code.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "design-n-code.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,16 +129,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB3A616B25895A9700F769DA /* SDWebImageSwiftUI in Frameworks */,
-				CB3A61642589269B00F769DA /* Contentful in Frameworks */,
-				CBE1A9B02587E2FF00D84223 /* Introspect in Frameworks */,
-				CB553DE1258F7291005C36BD /* Lottie in Frameworks */,
+				CB3A616B25895A9700F769DA /* BuildFile in Frameworks */,
+				CB3A61642589269B00F769DA /* BuildFile in Frameworks */,
+				CBE1A9B02587E2FF00D84223 /* BuildFile in Frameworks */,
+				CB553DE1258F7291005C36BD /* BuildFile in Frameworks */,
+				99247B13E65FF1B1120AEC2A /* Pods_design_n_code.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A2432810E25706A93542E884 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC6B4649EF0662919471C575 /* Pods-design-n-code.debug.xcconfig */,
+				82FA52ECA8B20414816BB8BD /* Pods-design-n-code.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BFAB7BFEF188D755A9C3948F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				343292415B45FE240E09E0B4 /* Pods_design_n_code.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CB183AC2254ED79A000AA29E /* Work_Sans */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +209,8 @@
 			children = (
 				CB9E02BE254B4E1100701FA3 /* design-n-code */,
 				CB9E02BD254B4E1100701FA3 /* Products */,
+				A2432810E25706A93542E884 /* Pods */,
+				BFAB7BFEF188D755A9C3948F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -207,6 +236,7 @@
 				CBEB0BE0254B6D8A00B67729 /* Home.swift */,
 				CBD68071258BDE2D00100858 /* Buttons.swift */,
 				CB553DDC258F68B6005C36BD /* LoginView.swift */,
+				CB553DEF258F80D7005C36BD /* SuccessView.swift */,
 				CB553DE3258F72B1005C36BD /* LottieView.swift */,
 				CB553DE6258F7302005C36BD /* LoadingView.swift */,
 				CB3A61592589226200F769DA /* Data.swift */,
@@ -220,6 +250,7 @@
 				CB1C8715254CCAE100163068 /* TabBar.swift */,
 				CB183AC2254ED79A000AA29E /* Work_Sans */,
 				CB9E02C3254B4E1200701FA3 /* Assets.xcassets */,
+				CB553DF2258F832C005C36BD /* GoogleService-Info.plist */,
 				CB553DE9258F73FB005C36BD /* Lottie */,
 				CB9E02C8254B4E1200701FA3 /* Info.plist */,
 				CB9E02C5254B4E1200701FA3 /* Preview Content */,
@@ -243,9 +274,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB9E02CB254B4E1200701FA3 /* Build configuration list for PBXNativeTarget "design-n-code" */;
 			buildPhases = (
+				BC79547A14482B9E0E7770EB /* [CP] Check Pods Manifest.lock */,
 				CB9E02B8254B4E1100701FA3 /* Sources */,
 				CB9E02B9254B4E1100701FA3 /* Frameworks */,
 				CB9E02BA254B4E1100701FA3 /* Resources */,
+				DA00447F7B28A1C96F8967D1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,10 +286,10 @@
 			);
 			name = "design-n-code";
 			packageProductDependencies = (
-				CBE1A9AF2587E2FF00D84223 /* Introspect */,
-				CB3A61632589269B00F769DA /* Contentful */,
-				CB3A616A25895A9700F769DA /* SDWebImageSwiftUI */,
-				CB553DE0258F7291005C36BD /* Lottie */,
+				CBE1A9AF2587E2FF00D84223 /* SwiftPackageProductDependency */,
+				CB3A61632589269B00F769DA /* SwiftPackageProductDependency */,
+				CB3A616A25895A9700F769DA /* SwiftPackageProductDependency */,
+				CB553DE0258F7291005C36BD /* SwiftPackageProductDependency */,
 			);
 			productName = "design-n-code";
 			productReference = CB9E02BC254B4E1100701FA3 /* design-n-code.app */;
@@ -286,10 +319,10 @@
 			);
 			mainGroup = CB9E02B3254B4E1100701FA3;
 			packageReferences = (
-				CBE1A9AE2587E2FF00D84223 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
-				CB3A61622589269B00F769DA /* XCRemoteSwiftPackageReference "contentful.swift" */,
-				CB3A616925895A9700F769DA /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
-				CB553DDF258F7291005C36BD /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				CBE1A9AE2587E2FF00D84223 /* RemoteSwiftPackageReference */,
+				CB3A61622589269B00F769DA /* RemoteSwiftPackageReference */,
+				CB3A616925895A9700F769DA /* RemoteSwiftPackageReference */,
+				CB553DDF258F7291005C36BD /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = CB9E02BD254B4E1100701FA3 /* Products */;
 			projectDirPath = "";
@@ -316,6 +349,7 @@
 				CB183AE3254ED79A000AA29E /* WorkSans-ExtraLightItalic.ttf in Resources */,
 				CB183AE8254ED79A000AA29E /* WorkSans-MediumItalic.ttf in Resources */,
 				CB553DEC258F73FB005C36BD /* loading.json in Resources */,
+				CB553DF3258F832D005C36BD /* GoogleService-Info.plist in Resources */,
 				CB183AE7254ED79A000AA29E /* WorkSans-Medium.ttf in Resources */,
 				CB183ADB254ED79A000AA29E /* README.txt in Resources */,
 				CB183AE2254ED79A000AA29E /* WorkSans-ExtraLight.ttf in Resources */,
@@ -335,6 +369,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BC79547A14482B9E0E7770EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-design-n-code-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA00447F7B28A1C96F8967D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-design-n-code/Pods-design-n-code-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-design-n-code/Pods-design-n-code-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-design-n-code/Pods-design-n-code-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CB9E02B8254B4E1100701FA3 /* Sources */ = {
@@ -357,6 +433,7 @@
 				CB9FB1DD254CC16300E95A93 /* UpdateStore.swift in Sources */,
 				CB3A615D2589228800F769DA /* PostList.swift in Sources */,
 				CB85645A25863DC400AE929D /* CourseDetail.swift in Sources */,
+				CB553DF0258F80D7005C36BD /* SuccessView.swift in Sources */,
 				CB553DDD258F68B6005C36BD /* LoginView.swift in Sources */,
 				CBD68072258BDE2D00100858 /* Buttons.swift in Sources */,
 				CBEB0BE1254B6D8A00B67729 /* Home.swift in Sources */,
@@ -488,6 +565,7 @@
 		};
 		CB9E02CC254B4E1200701FA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC6B4649EF0662919471C575 /* Pods-design-n-code.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -510,6 +588,7 @@
 		};
 		CB9E02CD254B4E1200701FA3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82FA52ECA8B20414816BB8BD /* Pods-design-n-code.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -554,7 +633,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CB3A61622589269B00F769DA /* XCRemoteSwiftPackageReference "contentful.swift" */ = {
+		CB3A61622589269B00F769DA /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/contentful/contentful.swift.git";
 			requirement = {
@@ -562,7 +641,7 @@
 				minimumVersion = 5.4.0;
 			};
 		};
-		CB3A616925895A9700F769DA /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+		CB3A616925895A9700F769DA /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
 			requirement = {
@@ -570,7 +649,7 @@
 				minimumVersion = 1.5.0;
 			};
 		};
-		CB553DDF258F7291005C36BD /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+		CB553DDF258F7291005C36BD /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
 			requirement = {
@@ -578,7 +657,7 @@
 				minimumVersion = 3.1.9;
 			};
 		};
-		CBE1A9AE2587E2FF00D84223 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+		CBE1A9AE2587E2FF00D84223 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
 			requirement = {
@@ -589,24 +668,24 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CB3A61632589269B00F769DA /* Contentful */ = {
+		CB3A61632589269B00F769DA /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CB3A61622589269B00F769DA /* XCRemoteSwiftPackageReference "contentful.swift" */;
+			package = CB3A61622589269B00F769DA /* RemoteSwiftPackageReference */;
 			productName = Contentful;
 		};
-		CB3A616A25895A9700F769DA /* SDWebImageSwiftUI */ = {
+		CB3A616A25895A9700F769DA /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CB3A616925895A9700F769DA /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			package = CB3A616925895A9700F769DA /* RemoteSwiftPackageReference */;
 			productName = SDWebImageSwiftUI;
 		};
-		CB553DE0258F7291005C36BD /* Lottie */ = {
+		CB553DE0258F7291005C36BD /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CB553DDF258F7291005C36BD /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			package = CB553DDF258F7291005C36BD /* RemoteSwiftPackageReference */;
 			productName = Lottie;
 		};
-		CBE1A9AF2587E2FF00D84223 /* Introspect */ = {
+		CBE1A9AF2587E2FF00D84223 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CBE1A9AE2587E2FF00D84223 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			package = CBE1A9AE2587E2FF00D84223 /* RemoteSwiftPackageReference */;
 			productName = Introspect;
 		};
 /* End XCSwiftPackageProductDependency section */
