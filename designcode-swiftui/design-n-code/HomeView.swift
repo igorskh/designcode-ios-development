@@ -79,11 +79,13 @@ struct HomeView: View {
             .offset(y: -30)
             
             SectionView(section: sectionData[2], width: screen.width - 60, height: 275)
+                .padding(.bottom, 80)
             
             Spacer()
         }
         .frame(width: screen.width)
     }
+    
 }
 
 struct HomeView_Previews: PreviewProvider {
