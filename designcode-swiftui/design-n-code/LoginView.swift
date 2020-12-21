@@ -13,6 +13,8 @@ func hideKeyboard() {
 }
 
 struct LoginView: View {
+    @EnvironmentObject var user: UserStore
+    
     @State var email = ""
     @State var password = ""
     
@@ -38,11 +40,13 @@ struct LoginView: View {
                 showAlert = true
             } else {
                 isSuccessful = true
+                user.isLogged = true
                 
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2){
                     self.isSuccessful = false
                     self.email = ""
                     self.password = ""
+                    self.user.showLogin = false
                 }
             }
         }
@@ -50,12 +54,12 @@ struct LoginView: View {
     
     var body: some View {
         ZStack {
+            Color.black.edgesIgnoringSafeArea(.all)
+            
+            Color("background2")
+                .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
+                .edgesIgnoringSafeArea(.bottom)
             ZStack(alignment: .top) {
-                Color.black.edgesIgnoringSafeArea(.all)
-                
-                Color("background2")
-                    .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
-                    .edgesIgnoringSafeArea(.bottom)
                 
                 CoverView()
                     .onTapGesture {
@@ -145,6 +149,8 @@ struct LoginView: View {
                 }
                 .padding()
             }
+            .offset(y: isFocused ? -200 : 0)
+            .animation(isFocused ? .timingCurve(0.2, 0.8, 0.2, 1, duration: 0.8) : .none)
             
             if isLoading {
                 LoadingView()
@@ -153,8 +159,6 @@ struct LoginView: View {
                 SuccessView()
             }
         }
-        .offset(y: isFocused ? -200 : 0)
-        .animation(isFocused ? .timingCurve(0.2, 0.8, 0.2, 1, duration: 0.8) : .none)
     }
 }
 

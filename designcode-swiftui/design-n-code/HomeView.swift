@@ -89,6 +89,7 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView(showProfile: .constant(false), showContent: .constant(false))
+            .environmentObject(UserStore())
     }
 }
 
