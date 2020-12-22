@@ -111,6 +111,7 @@
 		CB553E5B258F9AC1005C36BD /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
 		CB856456258638CB00AE929D /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
 		CB85645925863DC400AE929D /* CourseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetail.swift; sourceTree = "<group>"; };
+		CB8BB18625924A2700C6AC5A /* design-n-code.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "design-n-code.entitlements"; sourceTree = "<group>"; };
 		CB9E02BC254B4E1100701FA3 /* design-n-code.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "design-n-code.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9E02BF254B4E1100701FA3 /* design_n_codeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = design_n_codeApp.swift; sourceTree = "<group>"; };
 		CB9E02C1254B4E1100701FA3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -226,6 +227,7 @@
 		CB9E02BE254B4E1100701FA3 /* design-n-code */ = {
 			isa = PBXGroup;
 			children = (
+				CB8BB18625924A2700C6AC5A /* design-n-code.entitlements */,
 				CB9E02BF254B4E1100701FA3 /* design_n_codeApp.swift */,
 				CB856456258638CB00AE929D /* CourseList.swift */,
 				CB553E5B258F9AC1005C36BD /* UserStore.swift */,
@@ -572,6 +574,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "design-n-code/design-n-code.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"design-n-code/Preview Content\"";
 				DEVELOPMENT_TEAM = P3VKCDARX4;
@@ -595,6 +598,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "design-n-code/design-n-code.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"design-n-code/Preview Content\"";
 				DEVELOPMENT_TEAM = P3VKCDARX4;
