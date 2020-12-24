@@ -33,6 +33,7 @@
 		CB183AEE254ED79A000AA29E /* WorkSans-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB183AD8254ED79A000AA29E /* WorkSans-Italic-VariableFont_wght.ttf */; };
 		CB183AEF254ED79A000AA29E /* WorkSans-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB183AD9254ED79A000AA29E /* WorkSans-VariableFont_wght.ttf */; };
 		CB1C8716254CCAE100163068 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1C8715254CCAE100163068 /* TabBar.swift */; };
+		CB23E3EA2594B2C7009CDA34 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB23E3E92594B2C7009CDA34 /* Config.swift */; };
 		CB3A61572589218400F769DA /* ScrollViewWithOffsetKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A61562589218400F769DA /* ScrollViewWithOffsetKey.swift */; };
 		CB3A615A2589226200F769DA /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A61592589226200F769DA /* Data.swift */; };
 		CB3A615D2589228800F769DA /* PostList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A615C2589228800F769DA /* PostList.swift */; };
@@ -121,6 +122,8 @@
 		CB183AD8254ED79A000AA29E /* WorkSans-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		CB183AD9254ED79A000AA29E /* WorkSans-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		CB1C8715254CCAE100163068 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		CB23E3E92594B2C7009CDA34 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		CB23E3ED2594B31D009CDA34 /* Config.default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.default.swift; sourceTree = "<group>"; };
 		CB3A61562589218400F769DA /* ScrollViewWithOffsetKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewWithOffsetKey.swift; sourceTree = "<group>"; };
 		CB3A61592589226200F769DA /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		CB3A615C2589228800F769DA /* PostList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostList.swift; sourceTree = "<group>"; };
@@ -302,6 +305,8 @@
 				CB9E02C8254B4E1200701FA3 /* Info.plist */,
 				CB9E02C5254B4E1200701FA3 /* Preview Content */,
 				CB3A61562589218400F769DA /* ScrollViewWithOffsetKey.swift */,
+				CB23E3E92594B2C7009CDA34 /* Config.swift */,
+				CB23E3ED2594B31D009CDA34 /* Config.default.swift */,
 			);
 			path = "design-n-code";
 			sourceTree = "<group>";
@@ -523,6 +528,7 @@
 				CB553E5C258F9AC1005C36BD /* UserStore.swift in Sources */,
 				CB553DF0258F80D7005C36BD /* SuccessView.swift in Sources */,
 				CB553DDD258F68B6005C36BD /* LoginView.swift in Sources */,
+				CB23E3EA2594B2C7009CDA34 /* Config.swift in Sources */,
 				CBD68072258BDE2D00100858 /* Buttons.swift in Sources */,
 				CBEB0BE1254B6D8A00B67729 /* Home.swift in Sources */,
 				CB3A616E258A319A00F769DA /* BlurView.swift in Sources */,
