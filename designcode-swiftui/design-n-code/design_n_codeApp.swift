@@ -23,6 +23,16 @@ struct design_n_codeApp: App {
 
 // Firebase cloud messaging code from: https://github.com/firebase/quickstart-ios/tree/master/messaging
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    func registerCategories() {
+        let center = UNUserNotificationCenter.current()
+        center.delegate = self
+
+        let show = UNNotificationAction(identifier: "show", title: "Tell me more", options: .foreground)
+        let category = UNNotificationCategory(identifier: "OFFER", actions: [show], intentIdentifiers: [])
+
+        center.setNotificationCategories([category])
+    }
+    
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
@@ -43,6 +53,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             completionHandler: {_, _ in })
         
         application.registerForRemoteNotifications()
+        
+        registerCategories()
         
         // [END register_for_notifications]
         return true
@@ -116,9 +128,24 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
         let userInfo = response.notification.request.content.userInfo
         
         // With swizzling disabled you must let Messaging know about the message, for Analytics
-//         Messaging.messaging().appDidReceiveMessage(userInfo)
+        //         Messaging.messaging().appDidReceiveMessage(userInfo)
         // Print full message.
         print(userInfo)
+        
+        if let message = userInfo["message"] as? String {
+            print("Custom data received: \(message)")
+            
+            switch response.actionIdentifier {
+            case UNNotificationDefaultActionIdentifier:
+                // the user swiped to unlock
+                print("Default identifier")
+            case "show":
+                // the user tapped our "show more info…" button
+                print("Show more information…")
+            default:
+                break
+            }
+        }
         
         completionHandler()
     }
