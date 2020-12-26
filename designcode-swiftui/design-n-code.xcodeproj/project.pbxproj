@@ -65,6 +65,11 @@
 		CB9FB1DD254CC16300E95A93 /* UpdateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9FB1DC254CC16300E95A93 /* UpdateStore.swift */; };
 		CB9FB40125939E990072497E /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9FB40025939E990072497E /* NotificationService.swift */; };
 		CB9FB40525939E990072497E /* notification-service.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CB9FB3FE25939E990072497E /* notification-service.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CBA20016259666730033C285 /* DesignCodeClipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA20015259666730033C285 /* DesignCodeClipApp.swift */; };
+		CBA20018259666730033C285 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA20017259666730033C285 /* ContentView.swift */; };
+		CBA2001A259666740033C285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBA20019259666740033C285 /* Assets.xcassets */; };
+		CBA2001D259666740033C285 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBA2001C259666740033C285 /* Preview Assets.xcassets */; };
+		CBA20022259666740033C285 /* DesignCodeClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = CBA20013259666730033C285 /* DesignCodeClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CBB7A7B7254CBD7000E149A3 /* UpdateDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB7A7B6254CBD7000E149A3 /* UpdateDetail.swift */; };
 		CBD68072258BDE2D00100858 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD68071258BDE2D00100858 /* Buttons.swift */; };
 		CBE1A9B02587E2FF00D84223 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = CBE1A9AF2587E2FF00D84223 /* Introspect */; };
@@ -89,6 +94,13 @@
 			remoteGlobalIDString = CB9FB3FD25939E990072497E;
 			remoteInfo = "notification-service";
 		};
+		CBA20020259666740033C285 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB9E02B4254B4E1100701FA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBA20012259666730033C285;
+			remoteInfo = DesignCodeClip;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -102,6 +114,17 @@
 				CB74CCC925960BC1003B6C40 /* notification-content.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBA20023259666740033C285 /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				CBA20022259666740033C285 /* DesignCodeClip.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -171,6 +194,13 @@
 		CB9FB40025939E990072497E /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		CB9FB40225939E990072497E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB9FB42B2593A0BF0072497E /* notification-service.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "notification-service.entitlements"; sourceTree = "<group>"; };
+		CBA20013259666730033C285 /* DesignCodeClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCodeClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBA20015259666730033C285 /* DesignCodeClipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCodeClipApp.swift; sourceTree = "<group>"; };
+		CBA20017259666730033C285 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CBA20019259666740033C285 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBA2001C259666740033C285 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CBA2001E259666740033C285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBA2001F259666740033C285 /* DesignCodeClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DesignCodeClip.entitlements; sourceTree = "<group>"; };
 		CBB7A7B6254CBD7000E149A3 /* UpdateDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateDetail.swift; sourceTree = "<group>"; };
 		CBD68071258BDE2D00100858 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		CBE5F01E254CB3CC007485B2 /* UpdateList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateList.swift; sourceTree = "<group>"; };
@@ -202,6 +232,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CB9FB3FB25939E990072497E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBA20010259666730033C285 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -292,6 +329,7 @@
 				CB9E02BE254B4E1100701FA3 /* design-n-code */,
 				CB9FB3FF25939E990072497E /* notification-service */,
 				CB74CCC025960BC1003B6C40 /* notification-content */,
+				CBA20014259666730033C285 /* DesignCodeClip */,
 				CB9E02BD254B4E1100701FA3 /* Products */,
 				A2432810E25706A93542E884 /* Pods */,
 				BFAB7BFEF188D755A9C3948F /* Frameworks */,
@@ -304,6 +342,7 @@
 				CB9E02BC254B4E1100701FA3 /* design-n-code.app */,
 				CB9FB3FE25939E990072497E /* notification-service.appex */,
 				CB74CCBD25960BC1003B6C40 /* notification-content.appex */,
+				CBA20013259666730033C285 /* DesignCodeClip.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -367,6 +406,27 @@
 			path = "notification-service";
 			sourceTree = "<group>";
 		};
+		CBA20014259666730033C285 /* DesignCodeClip */ = {
+			isa = PBXGroup;
+			children = (
+				CBA20015259666730033C285 /* DesignCodeClipApp.swift */,
+				CBA20017259666730033C285 /* ContentView.swift */,
+				CBA20019259666740033C285 /* Assets.xcassets */,
+				CBA2001E259666740033C285 /* Info.plist */,
+				CBA2001F259666740033C285 /* DesignCodeClip.entitlements */,
+				CBA2001B259666740033C285 /* Preview Content */,
+			);
+			path = DesignCodeClip;
+			sourceTree = "<group>";
+		};
+		CBA2001B259666740033C285 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CBA2001C259666740033C285 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -397,12 +457,14 @@
 				CB9E02BA254B4E1100701FA3 /* Resources */,
 				DA00447F7B28A1C96F8967D1 /* [CP] Embed Pods Frameworks */,
 				CB9FB3F425938EEC0072497E /* Embed App Extensions */,
+				CBA20023259666740033C285 /* Embed App Clips */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				CB9FB40425939E990072497E /* PBXTargetDependency */,
 				CB74CCC825960BC1003B6C40 /* PBXTargetDependency */,
+				CBA20021259666740033C285 /* PBXTargetDependency */,
 			);
 			name = "design-n-code";
 			packageProductDependencies = (
@@ -432,6 +494,23 @@
 			productReference = CB9FB3FE25939E990072497E /* notification-service.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		CBA20012259666730033C285 /* DesignCodeClip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBA20026259666740033C285 /* Build configuration list for PBXNativeTarget "DesignCodeClip" */;
+			buildPhases = (
+				CBA2000F259666730033C285 /* Sources */,
+				CBA20010259666730033C285 /* Frameworks */,
+				CBA20011259666730033C285 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DesignCodeClip;
+			productName = DesignCodeClip;
+			productReference = CBA20013259666730033C285 /* DesignCodeClip.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -448,6 +527,9 @@
 						CreatedOnToolsVersion = 12.1;
 					};
 					CB9FB3FD25939E990072497E = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					CBA20012259666730033C285 = {
 						CreatedOnToolsVersion = 12.3;
 					};
 				};
@@ -474,6 +556,7 @@
 				CB9E02BB254B4E1100701FA3 /* design-n-code */,
 				CB9FB3FD25939E990072497E /* notification-service */,
 				CB74CCBC25960BC1003B6C40 /* notification-content */,
+				CBA20012259666730033C285 /* DesignCodeClip */,
 			);
 		};
 /* End PBXProject section */
@@ -525,6 +608,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBA20011259666730033C285 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBA2001D259666740033C285 /* Preview Assets.xcassets in Resources */,
+				CBA2001A259666740033C285 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,6 +714,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CBA2000F259666730033C285 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBA20018259666730033C285 /* ContentView.swift in Sources */,
+				CBA20016259666730033C285 /* DesignCodeClipApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -634,6 +735,11 @@
 			isa = PBXTargetDependency;
 			target = CB9FB3FD25939E990072497E /* notification-service */;
 			targetProxy = CB9FB40325939E990072497E /* PBXContainerItemProxy */;
+		};
+		CBA20021259666740033C285 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBA20012259666730033C285 /* DesignCodeClip */;
+			targetProxy = CBA20020259666740033C285 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -897,6 +1003,52 @@
 			};
 			name = Release;
 		};
+		CBA20024259666740033C285 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DesignCodeClip/DesignCodeClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"DesignCodeClip/Preview Content\"";
+				DEVELOPMENT_TEAM = P3VKCDARX4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = DesignCodeClip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.design-n-code.Clip";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CBA20025259666740033C285 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DesignCodeClip/DesignCodeClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"DesignCodeClip/Preview Content\"";
+				DEVELOPMENT_TEAM = P3VKCDARX4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = DesignCodeClip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "one.beagile.design-n-code.Clip";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -932,6 +1084,15 @@
 			buildConfigurations = (
 				CB9FB40725939E990072497E /* Debug */,
 				CB9FB40825939E990072497E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBA20026259666740033C285 /* Build configuration list for PBXNativeTarget "DesignCodeClip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBA20024259666740033C285 /* Debug */,
+				CBA20025259666740033C285 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
